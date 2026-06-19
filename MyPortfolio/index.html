@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Страница Акимова Дмитрия</title>
     <meta name="description" content="Страница Акимова Дмитрия, обо мне и моих увлечениях">
 </head>
 <body>
-    <header>
+    <header class="header-section">
         <h1>Главная</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Моё хобби</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Моё хобби</a></li>
+            <li><a href="#">Мои умения</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="about-section">
             <h2>Обо мне</h2>
-            <p>Я учусь в лучшем вузе страны, МГУ Огарева, на лучшем факультете этого вуза, математики и информационных технологий. Учусь довольно хорошо. Люблю слушать музыку и смотреть тиктоки. Иногда читаю книги и пишу музыку, </p>
-            <img src="image.jpg" alt="Моё фото">
+            <p>Я учусь в лучшем вузе страны, МГУ Огарева, на лучшем факультете этого вуза, математики и информационных технологий. Учусь довольно хорошо. Люблю слушать музыку и смотреть тиктоки. Иногда читаю книги и пишу музыку. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi vel eius, quisquam ut voluptatibus dicta nemo mollitia dolorum quod repellat optio. Natus, est aut praesentium magnam voluptatibus doloribus hic.</p>
+            <img class="photo" src="images/max.jpg" alt="Моё фото">
         </section>
 
-        <section>
+        <section class="hobby-section">
             <h2>Мое хобби</h2>
             <article>
-            <p>Моё хобби - сваривание металокострукций. Работать с железом довольно приятно, а сварка - неверятно залипательный процесс.</p>
+            <p>Моё хобби - сваривание металокострукций. Работать с железом довольно приятно, а сварка - неверятно залипательный процесс. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, praesentium tempore ut illo aperiam vitae cumque perferendis modi. Optio temporibus aperiam, illo architecto unde quis dolore eveniet eaque sed dolorem.</p>
             </article> 
+        </section>
+        
+        <h2 class="skills-header">Мои умения</h2>
+        <section class="skills-section">
+            <div class="card">
+                <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Arch_Linux_%22Crystal%22_icon.svg/1280px-Arch_Linux_%22Crystal%22_icon.svg.png">
+                <h3>Арч линукc</h3>
+            </div>
+            <div class="card">
+                <img src="images/cooking.jpg" alt="Cooking" class="card-image">
+                <h3>Умею готовить</h3>
+            </div>
+            <div class="card">
+                <img src="images/welding.webp" alt="Welding" class="card-image">
+                <h3>Варить</h3>
+            </div>
+            <div class="card">
+                <img src="images/programming.jpg" alt="" class="card-image">
+                <h3>Программирование</h3>
+            </div>
+            <div class="card">
+                <img src="images/addition.jfif" alt="" class="card-image">
+                <h3>Скалыдвать целые числа столбиком</h3>
+            </div>
         </section>
     </main>
 
-    <aside>
+    <aside class="side">
         <h3>Любимые реп-исполнители</h3>
         <ol>
             <li>Триагрутрика</li>
@@ -41,7 +68,7 @@
         </ol>
     </aside>
 
-    <footer>
+    <footer class="footer-section">
         <p>&copy; 2026 год</p>
         <a href="https://github.com/SOD1mas">Мой github</a>
     </footer>

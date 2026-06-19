@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "JetBrains-Mono";
+    src: url("JetBrainsMono-1.0.3/web/woff2/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+body {
+    font-family: "JetBrains-Mono", sans-serif;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: max-content max-content 4fr;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.nav-bar {
+    background-color: #F4EBBE;
+    color: #75704E;
+    font-size: 20px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.nav-bar a {
+    color: #75704E;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #571F4E;
+}
+
+.header-section {
+    background-color: #CACC90;
+    color: #571F4E;
+    padding: 10px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.main-content {
+    grid-column: 2;
+    grid-row: 2 / 3;
+}
+
+.about-section {
+    margin: 20px;
+}
+
+.hobby-section {
+    margin: 20px;
+}
+
+.skills-header {
+    margin: 20px;
+}
+
+.skills-section {
+    display: grid;
+    gap: 20px;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.card {
+    border: 5px #470024 solid;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.side {
+    border-left: 1px solid #8797AF;
+    padding: 20px;
+    grid-column: 3;
+    grid-row: 2 / 3;
+
+}
+
+.photo {
+    padding: 10px;
+    border: 10px #470024 solid;
+    border-radius: 10%;
+    width: 300px;
+    margin: 20px;
+}
+
+.footer-section {
+    color: azure;
+    background-color: #254441;
+    padding: 10px;
+    text-align: center;
+    grid-row: 4;
+    grid-column: 1 / 4;
+}
+
+.footer-section a {
+    color: #43AA8B
+}
