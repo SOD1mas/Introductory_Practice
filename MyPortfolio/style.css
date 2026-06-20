@@ -7,14 +7,13 @@ body {
     font-family: "JetBrains-Mono", sans-serif;
     margin: 0px;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr max-content;
     grid-template-rows: max-content max-content 4fr;
 }
 
 a {
     text-decoration: none;
 }
-
 
 .nav-bar {
     background-color: #F4EBBE;
@@ -26,6 +25,10 @@ a {
 
 .nav-bar a {
     color: #75704E;
+    transition: color 0.3s ease
+}
+.nav-bar a:hover {
+    color: #571F4E;
 }
 
 h1 {
@@ -78,14 +81,20 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     align-content: flex-end;
+    transition: border 0.3s ease;
+}
+
+.card:hover {
+    border: 5px #8797AF solid;
 }
 
 .card-image {
     max-width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
-.side {
+.side-bar {
     border-left: 1px solid #8797AF;
     padding: 20px;
     grid-column: 3;
@@ -93,11 +102,50 @@ h1 {
 
 }
 
+.feedback-form {
+    border: 1px #8797AF solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-element {
+    margin: 10px;
+}
+
+.text-input {
+    border: 1px #8797AF solid;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.05s ease;
+}
+
+.text-input:focus {
+    outline: none;
+    border: 3px #8797AF solid;
+}
+
+fieldset {
+    border-radius: 5px;
+}
+
+.send-button {
+    background-color: #CACC90;
+    border: 1px #8797AF solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    border: 5px #8797AF solid;
+    background-color: #F4EBBE;
+}
+
 .photo {
-    padding: 10px;
-    border: 10px #470024 solid;
-    border-radius: 10%;
-    width: 300px;
+    border: 5px #470024 solid;
+    border-radius: 15px;
+    width: 30vw;
     margin: 20px;
 }
 
@@ -112,4 +160,52 @@ h1 {
 
 .footer-section a {
     color: #43AA8B
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-rows: max-content max-content max-content max-content max-content;
+        grid-template-columns: 1fr;
+    }
+
+    .nav-bar {
+        font-size: 20px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .header-section {
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+
+    .main-content {
+        grid-column: 1;
+        grid-row: 3 / 4;
+    }
+
+    .photo {
+        width: 50vw;
+    }
+
+    .skills-section {
+        display: grid;
+        gap: 20px;
+        margin: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content max-content max-content;
+    }
+
+    .side-bar {
+        border-top: 1px solid #8797AF;
+        grid-column: 1;
+        grid-row: 4 / 5;
+
+    }
+
+    .footer-section {
+        grid-row: 5 / 6;
+        grid-column: 1 / 4;
+    }
+
 }

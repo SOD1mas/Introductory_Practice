@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Страница Акимова Дмитрия</title>
     <meta name="description" content="Страница Акимова Дмитрия, обо мне и моих увлечениях">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="header-section">
@@ -59,13 +60,40 @@
         </section>
     </main>
 
-    <aside class="side">
+    <aside class="side-bar">
         <h3>Любимые реп-исполнители</h3>
         <ol>
             <li>Триагрутрика</li>
             <li>Витя АК</li>
             <li>Паша Техник</li>
         </ol>
+
+        <form class="feedback-form" action="#" method="POST">
+            <h4 class="form-element">Написать мне (анонимно)</h4>
+            <div class="form-element">
+                <label for="user-name">Ваше имя:</label>
+                <input class="text-input" type="text" name="username" id="user-name" placeholder="Серёга" required>
+            </div>
+
+            <div class="form-element">
+                Сообщение:
+                <textarea class="text-input" name="message" id="message" placeholder="Текст" required></textarea>
+            </div>
+            
+            <fieldset class="form-element">
+                <legend>Зачем пишешь:</legend>
+                <div>
+                    <input type="radio" name="message-type" id="feedback" required>
+                    <label for="feedback">обратная связь по сайту</label>
+                </div>
+                <div>
+                    <input type="radio" name="message-type" id="other" required>
+                    <label for="other">другое</label>
+                </div>
+            </fieldset>
+
+            <button class="form-element send-button" type="submit">Отправить</button>
+        </form>
     </aside>
 
     <footer class="footer-section">
