@@ -58,11 +58,11 @@ h1 {
     margin: 20px;
 }
 
-.skills-header {
+.projects-header {
     margin: 20px;
 }
 
-.skills-section {
+.projects-section {
     display: grid;
     gap: 20px;
     margin: 20px;
@@ -188,7 +188,7 @@ fieldset {
         width: 50vw;
     }
 
-    .skills-section {
+    .projects-section {
         display: grid;
         gap: 20px;
         margin: 20px;
